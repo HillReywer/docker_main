@@ -25,5 +25,5 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build . --tag ghcr.io/hillreywer/store:latest
-              docker push ghcr.io/hillreywer/store:latest
+              docker build . --tag ghcr.io/hillreywer/alpine_node:latest
+              docker push ghcr.io/hillreywer/apline_node:latest
