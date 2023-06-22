@@ -4,7 +4,7 @@ ENV NODE=v14.17.2 NPM=6.14.13
 
 RUN apk update && \
     apk upgrade && \
-    apk install curl make gcc g++ python3 linux-headers binutils-gold gnupg libstdc++
+    apk add curl make gcc g++ python3 linux-headers binutils-gold gnupg libstdc++
     
 RUN curl -sfSLO https://nodejs.org/dist/v14.17.2/node-v14.17.2.tar.xz && \
     curl -sfSL https://nodejs.org/dist/v14.17.2/SHASUMS256.txt.asc | gpg -d -o SHASUMS256.txt && \
